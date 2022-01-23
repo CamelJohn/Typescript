@@ -1,0 +1,1 @@
+const mixedArray = ['jonathan', false, 33, 'jonathan'];
