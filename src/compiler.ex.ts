@@ -1,17 +1,16 @@
-const people: { age: number; name: string; occupation: string }[] = [
-  { age: 33, name: 'Jonathan', occupation: 'keyboard puncher' },
-  { age: 4, name: 'Avigail', occupation: 'Daddys little girl' },
-];
+// TODO: strictness examples
 
-function leagalDrinkingAge(personArray: any[]): { name: string; age: number }[] {
-  const mappedDetails = personArray.map((person) => {
-    return {
-      age: person.age,
-      name: person.name,
-    };
-  });
+// TODO: Downleveling Example
+const age = 35;
+const fullName = 'Jonathan Atia';
 
-  const ofDrinkingAge = mappedDetails.filter((person) => person.age > 18);
+const greet = `${fullName} is ${age} years old.`;
 
-  return ofDrinkingAge;
+// TODO: Emitting
+
+// ! with errors
+function greeting(name: string, date: any) {
+    console.log(`Hello ${name}, today is ${date}!`);
 }
+
+greeting('Infidel');
