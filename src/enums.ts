@@ -5,7 +5,9 @@ enum Bundler {
     Rollup = 'Rollup'
 }
 
-function defineBundler(bundler: Bundler) {
+type BundlerType = keyof typeof Bundler;
+
+function defineBundler(bundler: BundlerType) {
     switch (bundler) {
         case Bundler.esBuild: return false;
         case Bundler.Webpack: 
@@ -14,6 +16,8 @@ function defineBundler(bundler: Bundler) {
         default: return false;
     } 
 }
+
+defineBundler('esBuild')
 
 enum Ages {
     young = 10,
