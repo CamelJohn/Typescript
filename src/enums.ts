@@ -27,3 +27,8 @@ enum Ages {
     wise = 50
 }
 
+enum Mixed {
+    age = 35,
+    name = 'John'
+}
+

@@ -5,6 +5,5 @@ type handlerResponse = [Error | null, any | null];
 function errorHandler(cb: () => asyncResponse): handlerResponse {
   const response = cb();
 
-    return [response.error, response.data];
-
+  return [response.error, response.data];
 }
