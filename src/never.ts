@@ -1,4 +1,8 @@
-function handleErrorTypes(error: { type: string } & Error): never {
+type ExtendedError = {
+    type: string;
+} & Error;
+
+function handleErrorTypes(error: ExtendedError): never {
     if (error.type === 'user Error') {
         throw new Error('user error');
     }

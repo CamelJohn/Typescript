@@ -4,4 +4,4 @@ const weight: number = 78.6;
 const married: boolean = true;
 
 const occupation: any = 'code monkey';
-const hasALife: unknown = undefined;
+const hasALife: unknown = { type: 'dog'} as { type: string };
